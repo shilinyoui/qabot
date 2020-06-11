@@ -1,0 +1,53 @@
+{
+  "author": "Sergey Shilin",
+  "bugs": {
+    "url": "https://github.com/shilinyoui/qabot/issues"
+  },
+  "dependencies": {
+    "@slack/events-api": "^2.3.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongodb": "^3.5.8"
+  },
+  "description": "Q&A Slack bot",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.2.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.5"
+  },
+  "homepage": "https://github.com/shilinyoui/qabot#readme",
+  "keywords": [
+    "slackbot",
+    "slack",
+    "bot",
+    "q&a"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "qabot",
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shilinyoui/qabot.git"
+  },
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node --presets babel-preset-env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
+}
