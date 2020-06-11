@@ -56,8 +56,8 @@ app.post('/command', asyncHandler(async (req, res) => {
     }
 
     await createEvent(eventId);
-    const message = `Event created successfully.
-    Use this ID to add questions: \`${eventId}\``;
+    const message = `Event created successfully. \
+Use this ID to add questions: \`${eventId}\``;
     res.send(message);
     return;
   } else {
